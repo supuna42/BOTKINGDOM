@@ -1,7 +1,7 @@
 let { execSync } = require('child_process')
 let handler = async (m, { conn, text, isROwner }) => {
   if (global.conn.user.jid == conn.user.jid) {
-    let stdout = execSync('git pull https://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@github.com/zcoderpro/Botkingdomnew.git && git pull' + (isROwner && text ? ' ' + text : ''))
+    let stdout = execSync('git pull https://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@https://github.com/supuna32/BOTKINGDOMV1.git && git pull' + (isROwner && text ? ' ' + text : ''))
     if (isROwner) require('fs').readdirSync('plugins').map(v => global.reload('', v))
     conn.sendB(m.chat, stdout.toString(), wm, 0, [[`Node Test`, `$ node test`]], m)
   }
