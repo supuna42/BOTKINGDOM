@@ -4,7 +4,7 @@ const { promisify } = require('util')
 const { join } = require('path')
 
 let confirmation = {}
-let repository = repox // 'raselcomel/mymd'
+let repository = repox // 'supuna32/BOTKINGDOMV1'
 let branch = branx //'master'
 
 async function handler(m, { text }) {
